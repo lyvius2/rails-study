@@ -16,13 +16,22 @@
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="/posts">Posts</a></li>
-          <li><a href="#">Sign in</a></li>
-          <li><a href="#">Sign up</a></li>
+          <% if user_signed_in? %>
+            <li><%= current_user.name %></li>
+            <li><%= link_to 'Sign out', destroy_user_session_path, method: 'delete' %></li>
+          <% else %>
+            <li><%= link_to 'Sign in', new_user_session_path, method: 'get' %></li>
+            <li><%= link_to 'Sign up', new_user_registration_path, method: 'get' %></li>
+          <% end %>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li><a href="/posts">Posts</a></li>
-          <li><a href="#">Sign in</a></li>
-          <li><a href="#">Sign up</a></li>
+          <% if user_signed_in? %>
+            <li><%= link_to 'Sign out', destroy_user_session_path, method: 'delete' %></li>
+          <% else %>
+            <li><%= link_to 'Sign in', new_user_session_path, method: 'get' %></li>
+            <li><%= link_to 'Sign up', new_user_registration_path, method: 'get' %></li>
+          <% end %>
         </ul>
       </div>
     </nav>
