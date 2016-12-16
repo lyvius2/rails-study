@@ -35,6 +35,10 @@ gem 'jbuilder', '~> 2.5'
 
 # Rails 5
 gem 'devise', git: 'https://github.com/plataformatec/devise.git'
+# CarrierWave ImageUploader
+gem 'carrierwave'
+# Image Resize Library --> before(Linux) : 'sudo apt-get update', 'sudo apt-get install imagemagick'
+gem 'mini_magick'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
