@@ -1,5 +1,8 @@
-<div class="card">
+<div class="card post">
     <div class="card-content">
+        <% if post.user.avatar.url %>
+            <img class="circle thumbnail" src="<%= post.user.avatar.thumb.url %>" />
+        <% end %>
         <span class="card-title"><%= post.user.name %></span>
         <span><%= post.created_at %></span>
         <% if user_signed_in? && current_user != post.user %>
