@@ -28,7 +28,7 @@ gem install bundler
 bundle install
 ```
 7.GraphicsMagick 및 ImageMagick 설치
-* [GraphicsMagick Download](ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/windows/)
+* [GraphicsMagick Download](http://www.graphicsmagick.org/download.html)
 * [ImageMagick Download](http://www.imagemagick.org/script/binary-releases.php)
 
 8.DB Scheme 마이그레이션
