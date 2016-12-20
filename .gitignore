@@ -22,3 +22,4 @@
 
 # Ignore Uploaded Image Files
 /public/uploads
+/.idea
