@@ -9,33 +9,33 @@
 
 ### Installation (Windows)
 
-1. 루비 설치
-2. gem의 소스 원본 설정
+1.루비 설치  
+2.gem의 소스 원본 설정
 ```
 gem sources --add http://rubygems.org
 ```
-3. 이 [웹사이트](https://gist.github.com/luislavena/f064211759ee0f806c88)의 내용을 참고하여 gem의 버전 업데이트
-4. 레일즈 설치 (--pre : 최신 버전으로 설치 옵션)
+3.이 [웹사이트](https://gist.github.com/luislavena/f064211759ee0f806c88)의 내용을 참고하여 gem의 버전 업데이트  
+4.레일즈 설치 (--pre : 최신 버전으로 설치 옵션)
 ```
 gem install rails --pre
 ```
-5. bundler 설치
+5.bundler 설치
 ```
 gem install bundler
 ```
-6. 웹 애플리케이션 구동에 필요한 라이브러리 설치 (Gemfile에 의존성 적시)
+6.웹 애플리케이션 구동에 필요한 라이브러리 설치 (Gemfile에 의존성 적시)
 ```
 bundle install
 ```
-7. GraphicsMagick 및 ImageMagick 설치
+7.GraphicsMagick 및 ImageMagick 설치
 * [GraphicsMagick Download](ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/windows/)
 * [ImageMagick Download](http://www.imagemagick.org/script/binary-releases.php)
 
-8. DB Scheme 마이그레이션
+8.DB Scheme 마이그레이션
 ```
 rails db:migrate
 ```
-9. start the server.
+9.start the server.
 ```
 rails s
 ```
